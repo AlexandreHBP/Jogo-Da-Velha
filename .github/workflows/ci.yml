@@ -7,10 +7,10 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to jogo-da-velha.surge.sh
+      - name: Deploy to desafio1.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'jogo-da-velha.surge.sh'
+          domain: 'desafio1.surge.sh'
           project: '.'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
