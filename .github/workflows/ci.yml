@@ -7,8 +7,8 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
-      - name: Print the input name to STDOUT
-        run: pwd && ls -la
+      - name: Checkout recursive
+        uses: actions/checkout@v2
       - name: Deploy to desafio1.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
